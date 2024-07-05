@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let counters = [0, 0, 0, 0, 0, 0]; // For numbering headings
 
+  // determine the position of content on the screen
+  if (toc.classList.contains("toc-on-left")) {
+    content.classList.add("content-on-right");
+  } else {
+    content.classList.add("content-on-left");
+  }
+
   headings.forEach((heading) => {
     const level = parseInt(heading.tagName.charAt(1)) - 1; // get the number of the heading tag and reduce by 1. eg. from h1 get 1 and make it 0.
     counters[level] += 1;
