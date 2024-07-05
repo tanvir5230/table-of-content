@@ -1,8 +1,8 @@
 /* Global variables */
 :root {
-  --h1-size: 24px;
+  --h1-size: 18px;
   /* Base size for the largest heading */
-  --h-size-step: 2px;
+  --h-size-step: 1.5px;
   /* Decrement step for each subsequent heading */
   --expand-btn-position: 20px;
   /* This determinese the position of expand button on mobile screen */
